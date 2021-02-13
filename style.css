@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "uthmani";
+    src: url("uthmani.otf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Light.ttf");
+}
+body{
+    background-color: #000000;
+    background-image: url("skulls.png");
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+h2 div:first-child{
+    font-family: uthmani, Traditional Arabic;
+    font-weight: normal;
+    font-size: 35px;
+}
+h2 div:nth-child(2){
+    font-size: 23px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+h2 a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.asmaul_husna {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.name {
+    background: rgba( 255, 255, 255, 0.19 );
+    box-shadow: 0 0px 2px 0 rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur( 10.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.19 );
+
+    text-align: justify;
+
+    padding: 20px;
+    padding-top: 10px;
+    margin: 30px;
+
+    max-width: 500px;
+}
+.ayah {
+    padding-top: 5px;
+    font-size: 25px;
+    font-family: uthmani, Traditional Arabic;
+    text-align: right;
+    direction: rtl;
+    width: 100%;
+}
+.name .paragraph {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ecf0f1;
+}
+.name .paragraph:last-child {
+    border-bottom: none;
+}
+a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}

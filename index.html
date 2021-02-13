@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Allahın gözəl isimləri - Əsməul Husnə - (أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ)</title>
+
+</head>
+<body>
+    <div class="asmaul_husna">
+        <div class="name" id="assalam">
+            <h2><a href="#almumin"><div>ٱلْسَّلَامُ</div><div>Əs-Sələəm</div></a></h2>
+            <hr>
+            <div class="paragraph">
+                <b>Sülh, salamatlıq, əmin-amanlıq</b> - Allah sülhün, salamatlığın mənbəyidir. Bu ad yalnız Allah məxsusdur və bəndəyə bu adı vermək icazəli deyil.
+            </div>
+        </div>
+        <div class="name" id="almumin">
+            <h2><a href="#almumin"><div>ٱلْمُؤْمِنُ</div><div>Əl-Mu'min</div></a></h2>
+            <hr>
+            <div class="paragraph">
+                <b>Təsdiqləmək, şəhadət vermək</b> - Allah peyğəmbərlərinin doğruluğuna, möcüzələrinə şəhadət verir və təsdiqləyir.
+                Allah möminlərə vəd etdiyi mükafatların və kafirlərə vəd etdiyi əzabın doğruluğunu təsdiqləyir.
+                Allahın vəd etdikləri mütləq reallaşacaq.
+            </div>
+
+            <div class="paragraph">
+                <b>Qorumaq, mühafizə etmək</b> - O Rəbb ki, onlara aclıqdan sonra yemək, qorxudan sonra əmin-amanlıq verdi (<a href="https://quran.az/106/4" target="_blank">106:4</a>).
+                <div class="ayah">الَّذِي أَطْعَمَهُمْ مِنْ جُوعٍ وَآمَنَهُمْ مِنْ</div>
+                Allah ona yaxın olanları imanla bağlı və digər daxili təhlükələrdən hifz edir.
+            </div>
+
+            <div class="paragraph">
+                Allah Özündən başqa tanrının olmadığına şahidlik etdi, mələklər və elm sahibləri də (şahidlik etdilər). (Allah əbədi olaraq) ədalətli olmaqdadır. Ondan başqa ilah yoxdur, Qüdrətlidir, Müdrikdir. (<a href="https://quran.az/3/18" target="_blank">3:18</a>).
+                <div class="ayah">شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if(window.location.hash) {
+            document.querySelectorAll('.name').forEach(element => {
+                if ('#' + element.id != window.location.hash) element.style.display = 'none'
+            });
+        }
+    </script>
+</body>
+</html>
