@@ -36,12 +36,12 @@ h2 a {
     align-content: center;
 }
 .asmaul_husna {
-    margin: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-bottom: 60px;
 }
 .name {
     background: rgba( 255, 255, 255, 0.19 );
@@ -49,22 +49,29 @@ h2 a {
     backdrop-filter: blur( 10.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.19 );
-
-    text-align: justify;
-
-    padding: 20px;
-    padding-top: 10px;
-    margin: 30px;
-
-    max-width: 600px;
+    padding: 12px;
+    padding-top: 8px;
+    margin: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    max-width: 670px;
 }
-.ayah {
-    padding-top: 5px;
-    font-size: 25px;
+.paragraph {
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.4pt;
+}
+.ayah, .hadith {
+    font-size: 24px;
     font-family: uthmani, Traditional Arabic;
     text-align: right;
     direction: rtl;
     width: 100%;
+    line-height: 45px;
+    letter-spacing: 0;
+}
+.hadith {
+    font-size: 23px;
 }
 .name .paragraph {
     padding-top: 10px;
