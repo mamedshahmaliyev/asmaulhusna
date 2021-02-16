@@ -110,7 +110,7 @@
             }
             return b;
         })(window.location.search.substr(1).split('&'));
-        document.body.classList.add('bg'+(qs['bg'] || '0'));
+        document.body.classList.add('bg'+(qs['bg'] || Math.floor((Math.random() * 3) + 0)));
     </script>
 </body>
 </html>
