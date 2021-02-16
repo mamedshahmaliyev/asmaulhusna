@@ -8,11 +8,22 @@
 }
 body{
     background-color: #000000;
-    background-image: url("skulls.png");
     font-family: 'Roboto', sans-serif;
     color: #ecf0f1;
     margin: 0;
     padding: 0;
+}
+body.bg0 {
+    background-image: url("bg/0.png");
+}
+body.bg1 {
+    background-image: url("bg/1.png");
+}
+body.bg2 {
+    background-image: url("bg/2.png");
+}
+body.bg3 {
+    background-image: url("bg/3.png");
 }
 h2 {
     padding: 0;
