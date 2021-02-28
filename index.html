@@ -201,6 +201,7 @@
 
         var only = qs['only'] || window.location.hash || false
         if (only) {
+            only = only.replace('#', '')
             document.querySelectorAll('.asmaul_husna .name').forEach(element => {
                 if (element.id != only) element.remove()
                 if (element.id == only) document.title += ', '  + element.querySelectorAll('h2 a div')[1].innerText + ', '  + element.querySelectorAll('h2 a div')[0].innerText;
