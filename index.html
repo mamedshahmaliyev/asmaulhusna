@@ -8,12 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preload" href="/fonts/uthmani.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <title>Allahın gözəl isimləri - Əsməul Husnə - (أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ)</title>
 </head>
 <body>
+    <div class="home"><a href="/"><i class="fas fa-home"></i></a></div>
     <div class="asmaul_husna">
         <div class="name" id="assalam">
-            <h2><a href="#almumin"><div>ٱلْسَّلَامُ</div><div>Əs-Sələm</div></a></h2>
+            <h2><a href="?only=assalam"><div>ٱلْسَّلَامُ</div><div>Əs-Sələm</div></a></h2>
             <hr>
             <div class="paragraph">
                 <b>Sülh, salamatlıq, əmin-amanlıq</b> - Allah sülhün, salamatlığın mənbəyidir.
@@ -22,7 +27,7 @@
         </div>
 
         <div class="name" id="almumin">
-            <h2><a href="#almumin"><div>ٱلْمُؤْمِنُ</div><div>Əl-Mumin</div></a></h2>
+            <h2><a href="?only=almumin"><div>ٱلْمُؤْمِنُ</div><div>Əl-Mumin</div></a></h2>
             <hr>
             <div class="paragraph">
                 <b>Təsdiqləmək, şəhadət vermək</b> - Allah peyğəmbərlərinin doğruluğuna, möcüzələrinə şəhadət verir və təsdiqləyir.
@@ -57,7 +62,7 @@
         </div>
 
         <div class="name" id="almuhaymin">
-            <h2><a href="#almuhaymin"><div>ٱلْمُهَيْمِنُ</div><div>Əl-Muhəymin</div></a></h2>
+            <h2><a href="?only=almuhaymin"><div>ٱلْمُهَيْمِنُ</div><div>Əl-Muhəymin</div></a></h2>
             <hr>
             <div class="paragraph">
                 <i>Biz sənə özündən əvvəlki kitabları təsdiqləyən və onları <span class="green">mühafizə edən</span>
@@ -88,7 +93,7 @@
         </div>
 
         <div class="name" id="alaziz">
-            <h2><a href="#alaziz"><div>ٱلْعَزِيزُ</div><div>Əl-Əziz</div></a></h2>
+            <h2><a href="?only=alaziz"><div>ٱلْعَزِيزُ</div><div>Əl-Əziz</div></a></h2>
             <hr>
             <div class="paragraph">
                 <b>Üstələyən, uca, hər şeyə qadir, üstün iradəli, üstün gücə, qüvvətə, hakimiyyətə malik, dominant</b> -
@@ -162,7 +167,7 @@
 
 
         <div class="name" id="hashr">
-            <h2><a href="#hashr"><div>الحشر</div><div>Həşr surəsindən ayələr</div></a></h2>
+            <h2><a href="?only=hashr"><div>الحشر</div><div>Həşr surəsindən ayələr</div></a></h2>
             <hr>
             <div class="paragraph">
                 <i>O, Özündən başqa heç bir məbud olmayan, qeybi və aşkarı Bilən Allahdır. O Mərhəmətlidir, Rəhmlidir (<a href="https://quran.az/59/22?t=1" target="_blank">59:22</a>).</i>
@@ -182,11 +187,6 @@
     </div>
 
     <script>
-        if(window.location.hash) {
-            document.querySelectorAll('.name').forEach(element => {
-                if ('#' + element.id != window.location.hash) element.style.display = 'none'
-            });
-        }
         var qs = (function(a) {
             if (a == "") return {};
             var b = {};
@@ -198,6 +198,19 @@
             return b;
         })(window.location.search.substr(1).split('&'));
         document.body.classList.add('bg'+(qs['bg'] || Math.floor((Math.random() * 3) + 0)));
+
+        var only = qs['only'] || window.location.hash || false
+        if (only) {
+            document.querySelectorAll('.asmaul_husna .name').forEach(element => {
+                if (element.id != only) element.remove()
+                if (element.id == only) document.title += ', '  + element.querySelectorAll('h2 a div')[1].innerText + ', '  + element.querySelectorAll('h2 a div')[0].innerText;
+            });
+        }
+
+        var msnry = new Masonry( '.asmaul_husna', {
+            itemSelector: '.name',
+            fitWidth: true
+        });
     </script>
 </body>
 </html>

@@ -27,6 +27,7 @@ body.bg2 {
 body.bg3 {
     background-image: url("bg/3.png");
 }
+
 h2 {
     padding: 0;
     margin: 0;
@@ -49,13 +50,25 @@ h2 a {
     align-content: center;
     color: #ecf0f1;
 }
+.home {
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    z-index: 1;
+}
+.home a {
+    font-size: 24px;
+    text-shadow: 0px 0px 1px lightblue;
+}
 .asmaul_husna {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start; */
+    margin: 0 auto;
     margin-bottom: 60px;
+    margin-top: 25px;
 }
 .name {
     background: rgba( 255, 255, 255, 0.19 );
@@ -63,12 +76,14 @@ h2 a {
     backdrop-filter: blur( 10.0px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.19 );
-    padding: 12px;
+    padding: 14px;
     padding-top: 8px;
-    margin: 10px;
-    margin-top: 25px;
-    margin-bottom: 20px;
     max-width: 670px;
+    margin: 10px;
+}
+.name ul {
+    margin: 0;
+    padding-left: 20px;
 }
 .paragraph {
     font-size: 17px;
