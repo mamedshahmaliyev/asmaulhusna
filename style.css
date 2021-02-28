@@ -1,11 +1,13 @@
 @font-face {
     font-family: "uthmani";
-    src: url("uthmani.otf");
+    src: url("fonts/uthmani.otf");
+    font-display: swap;
 }
-@font-face {
+/* @font-face {
     font-family: "Roboto";
     src: url("Roboto-Light.ttf");
-}
+    font-display: swap;
+} */
 body{
     background-color: #000000;
     font-family: 'Roboto', sans-serif;
@@ -45,6 +47,7 @@ h2 a {
     justify-content: center;
     align-items: center;
     align-content: center;
+    color: #ecf0f1;
 }
 .asmaul_husna {
     display: flex;
@@ -93,7 +96,7 @@ h2 a {
     border-bottom: none;
 }
 a {
-    color: #ecf0f1;
+    color: lightblue;
     text-decoration: none;
 }
 a:hover {
