@@ -1,266 +1,204 @@
 <!DOCTYPE html>
-<html lang="az">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="preload" href="/fonts/uthmani.otf" as="font" type="font/otf" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="uthmani.otf" as="font" type="font/otf" crossorigin>
+    <link
+    rel="stylesheet"
+    media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@latest/cdn/themes/light.css"
+    />
+    <link
+    rel="stylesheet"
+    media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@latest/cdn/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-    <title>Allahın gözəl isimləri - Əsməul Husnə - (أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ)</title>
-</head>
-<body>
-    <div class="home"><a href="/"><i class="fas fa-home"></i></a></div>
-    <div class="asmaul_husna">
-        <div class="name" id="assalam">
-            <h2><a href="?only=assalam"><div>ٱلْسَّلَامُ</div><div>Əs-Sələm</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <b>Sülh, salamatlıq, əmin-amanlıq</b> - Allah sülhün, salamatlığın mənbəyidir.
-                Bu ad yalnız Allaha məxsusdur və bəndəyə bu adı vermək icazəli deyil.
-            </div>
-        </div>
-
-        <div class="name" id="almumin">
-            <h2><a href="?only=almumin"><div>ٱلْمُؤْمِنُ</div><div>Əl-Mumin</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <b>Təsdiqləmək, şəhadət vermək</b> - Allah peyğəmbərlərinin doğruluğuna, möcüzələrinə şəhadət verir və təsdiqləyir.
-                Allah möminlərə vəd etdiyi mükafatların və kafirlərə vəd etdiyi əzabın doğruluğunu təsdiqləyir.
-                Allahın vəd etdikləri mütləq reallaşacaq.
-            </div>
-
-            <div class="paragraph">
-                <b>Qorumaq, mühafizə etmək, təhlükəsizlik bəxş etmək</b> - <i>O Rəbb ki, onlara aclıqdan sonra yemək,
-                    qorxudan sonra <span class="green">əmin-amanlıq</span> verdi (<a href="https://quran.az/106/4?t=1" target="_blank">106:4</a>).</i>
-                <div class="ayah">الَّذِي أَطْعَمَهُمْ مِنْ جُوعٍ وَ<span class="green">آمَنَهُمْ</span> مِنْ خَوْفٍ</div>
-                Allah ona yaxın olanları imanla bağlı və digər daxili təhlükələrdən, qorxudan həm bu dünyada, həm də axirətdə hifz edir.
-                Allah ona iman edənlərin qəlbində sülhü və əmin-amanlığı bərqərar edir.
-            </div>
-
-            <div class="paragraph">
-                <i>Allah Özündən başqa tanrının olmadığına şahidlik etdi, mələklər və elm sahibləri də (şahidlik etdilər).
-                (Allah əbədi olaraq) ədalətli olmaqdadır.
-                Ondan başqa ilah yoxdur, Qüdrətlidir, Müdrikdir. (<a href="https://quran.az/3/18?t=1" target="_blank">3:18</a>).</i>
-                <div class="ayah">شَهِدَ اللَّهُ أَنَّهُ لَا إِلَٰهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ ۚ لَا إِلَٰهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ</div>
-            </div>
-
-            <div class="paragraph">
-                Qorxu və narahatlıq halında Allahdan Əl-Mumin adı ilə əmin-amanlıq və rahatlıq diləmək olar.
-            </div>
-
-            <div class="paragraph">
-                Peyğəmbərimiz (ﷺ) demişdir: "Aranızdan hər kim fiziki sağlam olaraq yuxudan oyanarsa, özündə <span class="green">əmin-amanlıq</span> hiss edərsə və gündəlik azuqəsi varsa,
-                bütün dünyanı almış kimidir (<a href="https://sunnah.com/urn/1342790" target="_blank">Sünən İbn Məcə</a>)."
-                <div class="hadith">مَنْ أَصْبَحَ مِنْكُمْ مُعَافًى فِي جَسَدِهِ <span class="green">آمِنًا</span> فِي سِرْبِهِ عِنْدَهُ قُوتُ يَوْمِهِ فَكَأَنَّمَا حِيزَتْ لَهُ الدُّنْيَا</div>
-            </div>
-        </div>
-
-        <div class="name" id="almuhaymin">
-            <h2><a href="?only=almuhaymin"><div>ٱلْمُهَيْمِنُ</div><div>Əl-Muhəymin</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <i>Biz sənə özündən əvvəlki kitabları təsdiqləyən və onları <span class="green">mühafizə edən</span>
-                Kitabı haqq olaraq nazil etdik... (<a href="https://quran.az/5/48?t=1" target="_blank">5:48</a>).</i>
-                <div class="ayah">وَأَنْزَلْنَا إِلَيْكَ الْكِتَابَ بِالْحَقِّ مُصَدِّقًا لِمَا بَيْنَ يَدَيْهِ مِنَ الْكِتَابِ وَ <span class="green">مُهَيْمِنًا</span> عَلَيْهِ...</div>
-                Bu ayədə Allah "Quran"ı "muhəymin" adlandır. "Muhəymin" sözünün aşağıdakı mənaları var: <br>
-            </div>
-            <div class="paragraph">
-                <b>Ucaldılmış, yüksək statusa malik olan</b> - Şübhəsiz, "Quran" bütün kitabların ən üstünüdür və kitablar arasında ən yüksək statusa malikdir. Allah ən ucadır. <br>
-            </div>
-            <div class="paragraph">
-                <b>Şahid olan, müşahidə edən</b> - "Quran" bizim üzərimizdə müşahidəçidir. Axirətdə "Quran" bizim lehimizə və ya əleyhimizə şahidlik edəcək.
-                Peyğəmbərimizin (ﷺ) əxlaqı "Quran"ın təcəssümüdür.
-                Aişədən (رضي الله عنها) Peyğəmbərin (ﷺ) əxlaqı barədə soruşulduqda: "Rəsulullahın (ﷺ) əxlaqı - Quran əxlaqıdır", - deyə cavab vermişdir (<a href="https://abuaminaelias.com/dailyhadithonline/2012/08/11/prophet-character-quran/" target="_blank">Səhih Müslim</a>).
-            </div>
-            <div class="paragraph">
-                <b>Güvənli və etibarlı həqiqət mənbəyi</b> - Digər kitablarda olan hər hansı məlumatın doğruluğunu "Quran" ilə təsdiqləmək olur.
-                <i>Şübhəsiz ki, Zikri Biz nazil etdik, əlbəttə, Biz də onu qoruyacağıq (<a href="https://quran.az/15/9?t=1" target="_blank">15:9</a>).</i>
-                <div class="ayah">إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ</div>
-            </div>
-            <div class="paragraph">
-                <b>Mühafizə edən, mühafizəkar</b> - "Quran" Peyğəmbərimizin (ﷺ) etdiklərini təsdiqləyir və mühafizə edir.
-            </div>
-            <div class="paragraph">
-                Əl-Muhəymin olan Allah ən ucadır, bəndələrini müşahidə edir, izləyir və mühafizə edir.
-                Allahın bu adını bilmək və xatırlamaq bəndəni günah etməkdən çəkindirməlidir.
-            </div>
-        </div>
-
-        <div class="name" id="alaziz">
-            <h2><a href="?only=alaziz"><div>ٱلْعَزِيزُ</div><div>Əl-Əziz</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <b>Üstələyən, uca, hər şeyə qadir, üstün iradəli, üstün gücə, qüvvətə, hakimiyyətə malik, dominant</b> -
-                <i>Bu mənim qardaşımdır. Onun doxsan doqquz qoyunu, mənim isə bircə qoyunum vardır.
-                (Bununla belə:) “Onu mənə ver!”, – dedi və mübahisədə mənə <span class="green">üstün gəldi</span>”
-                (<a href="https://quran.az/38/23?t=1" target="_blank">38:23</a>).</i>
-                <div class="ayah">إِنَّ هَٰذَا أَخِي لَهُ تِسْعٌ وَتِسْعُونَ نَعْجَةً وَلِيَ نَعْجَةٌ وَاحِدَةٌ فَقَالَ أَكْفِلْنِيهَا <span class="green">وَعَزَّنِي</span> فِي الْخِطَابِ</div>
-
-                <i>O zaman onlara iki nəfər (elçi) göndərdik, amma onlar ikisini də yalançı saydılar.
-                Biz də (elçilərimizi) üçüncüsü ilə <span class="green">qüvvətləndirdik</span>. Elçilər: “Həqiqətən, biz sizə göndərilmiş elçilərik”, – dedilər
-                (<a href="https://quran.az/36/14?t=1" target="_blank">36:14</a>).</i>
-                <div class="ayah">إِذْ أَرْسَلْنَا إِلَيْهِمُ اثْنَيْنِ فَكَذَّبُوهُمَا <span class="green">فَعَزَّزْنَا</span> بِثَالِثٍ فَقَالُوا إِنَّا إِلَيْكُمْ مُرْسَلُونَ</div>
-            </div>
-            <div class="paragraph">
-                Bu ad bəndəyə də aid edilə bilər. ...<span class="green">Zadəgan</span> kişinin isə arvadı dedi:
-                “İndi haqq bəlli oldu... (<a href="https://quran.az/12/51?t=1" target="_blank">12:51</a>)
-                <div class="ayah">...قَالَتِ امْرَأَتُ <span class="green">الْعَزِيزِ</span> الْآنَ حَصْحَصَ الْحَقُّ...</div>
-
-                <b>Çətin tapılan, nadir və qiymətli olan, əlçatan olmayan</b> - ərəb dilində qəbuluna düşmək çətin olan, əlçatan olmayan,
-                yüksək vəzifəli və ya statuslu şəxslər üçün "əziz" sözündən istifadə edilir.
-            </div>
-            <div class="paragraph">
-                Hər gün çoxlu sayda insan Allaha dua edir, lakin kim Allaha duasını eşitdirə və ya reallaşdırmağa məcbur edə bilər?! Kim Allahın qəbuluna rahat şəkildə düşə bilər?!
-                Hətta "Merac" hadisəsində ən üstün mələk Cəbrayıl (əs) belə Allahın hüzuruna daxil ola bilmədi. Musa (əs) Allahı görmək istədi, lakin dərhal huşunu itirdi. <br>
-                <i>Musa təyin etdiyimiz vaxtda gəldikdə Rəbbi onunla danışdı. (Musa) dedi: “Ey Rəbbim! (Özünü) mənə göstər, Sənə baxım”.
-                    O dedi: “Sən məni görə bilməzsən. Lakin (bu) dağa bax. Əgər o, öz yerində qala bilsə, sən də Məni görəcəksən”.
-                    Rəbbi dağa göründükdə onu parça-parça etdi. Musa da bayılaraq yerə sərildi.
-                    Özünə gəldikdə isə dedi: “Sən pak və müqəddəssən! Sənə tövbə etdim və mən iman gətirənlərin birincisiyəm!” (<a href="https://quran.az/7/143?t=1" target="_blank">7:143</a>)</i>
-            </div>
-
-            <div class="paragraph">
-                <b>Ləyaqət, şərəf, izzət, qüdrət</b> - <i>Onlar: "Əgər biz Mədinəyə qayıtsaq, ən <span class="green">qüdrətlilər</span> (münafiqlər) ən alçaqları (müsəlmanları) mütləq oradan çıxardacaqlar!", – deyirlər.
-                    Halbuki <span class="green">qüdrət</span> yalnız Allaha, Onun Elçisinə və möminlərə məxsusdur, lakin (bunu) münafiqlər bilmirlər (<a href="https://quran.az/63/8?t=1" target="_blank">63:8</a>).</i>
-                    <div class="ayah">يَقُولُونَ لَئِنْ رَجَعْنَا إِلَى الْمَدِينَةِ لَيُخْرِجَنَّ <span class="green">الْأَعَزُّ</span> مِنْهَا الْأَذَلَّ ۚ وَلِلَّهِ <span class="green">الْعِزَّةُ</span> وَلِرَسُولِهِ وَلِلْمُؤْمِنِينَ وَلَٰكِنَّ الْمُنَافِقِينَ لَا يَعْلَمُونَ</div>
-
-                Allah istədiyi şəxsi şərəfləndirir və izzətləndirir və bunun qarşısını heç kəs ala bilmir (məsələn, peyğəmbərlər, səhabələr, ümmətin alimləri və s.).
-
-                <i>De: "Ey mülkün sahibi Allahım! Sən istədiyin kəsə mülkü verir­ və istədiyindən də onu geri alırsan; istədiyin kimsəni <span class="green">yüksəldir</span> və istədiyini də alçaldırsan.
-                    Xeyir (yalnız) Sənin Əlindədir. Həqiqətən, Sən hər şeyə qadirsən." (<a href="https://quran.az/3/26?t=1" target="_blank">3:26</a>).</i>
-
-                <div class="ayah">قُلِ اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ <span class="green">وَتُعِزُّ</span> مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ ۖ بِيَدِكَ الْخَيْرُ ۖ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ</div>
-            </div>
-
-            <div class="paragraph">
-                <ul>
-                    <li>Bütün yaradılış Allahın razılığına can atmalı və onun əzabından qorxmalıdır.</li>
-                    <li>Allah sevdiyi kəslərə əziyyət verməyi sevmir.
-                        Məsələn, Allah möminin ruhunu bədənindən çıxarmağa tərəddüd etdiyi qədər heç nəyə tərəddüd etmir (qüdsi <a target="_blank" href="https://sunnah.com/bukhari:6502">hədis</a>dən).</li>
-                    <li>İmam Qəzəliyə görə, "əziz" kəlməsi 3 keyfiyyəti özündə cəm edir: Çətin tapılan, nadir olan və eyni zamanda qiymətli, dəyərli; özündən başqa hər şeyin ona möhtac olması; əlçatan olmayan.</li>
-                    <li>
-                        İzzəti bəndələrə deyil, yalnız Allaha yaxınlaşmaqla və onun vasitəsilə əldə etmək olar.
-                        <i>Kim qüdrət sahibi olmaq istəsə, bilsin ki, qüdrət bütünlüklə ancaq Allaha məxsusdur (<a href="https://quran.az/35/10?t=1" target="_blank">3:10</a>)...</i>
-                        <div class="ayah">مَنْ كَانَ يُرِيدُ الْعِزَّةَ فَلِلَّهِ الْعِزَّةُ جَمِيعًا...</div>
-                    </li>
-                    <li>
-                        <i>Həqiqətən, zəqqum ağacı günahkar adamın yeməyidir. Əridilmiş yağın çöküntüsü kimi qarınlarda qaynayar – qaynar su qaynayan kimi.
-                        Onu tutub Cəhənnəmin ortasına sürüyün! Sonra əzab vermək üçün başına qaynar su tökün!
-                        Dad bu əzabı! Sən ki qüdrətli və şərəfli idin. Sizin şübhə etdiyiniz əzab budur! (<a href="https://quran.az/44?t=1" target="_blank">44:43-50</a>)</i>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
+    <style>
+        @font-face {
+            font-family: "uthmani";
+            src: url("uthmani.otf");
+            font-display: swap;
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            height: 100%;
+            font: 16px var(--sl-font-sans);
+            font-weight: var(--sl-font-weight-normal);
+            background-color: var(--docs-background-color);
+            line-height: var(--sl-line-height-normal);
+            color: var(--sl-color-neutral-900);
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+        section {
+            margin: auto;
+            max-width: 800px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        sl-card {
+            width: 100%;
+        }
         
-        <div class="name" id="aljabbar">
-            <h2><a href="?only=aljabbar"><div>الْجَبَّارُ</div><div>Əl-Cəbbər</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <b>Hökmə məcbur etmək, gücünü göstərmək, hökmran, ucalıq sahibi, üstün güc sahibi</b> - Bu ada Həşr surəsində və bir çox qüdsi hədislərdə rast gəlinir.
-                İnsanlara xitabən neqativ mənada istifadə olunur. 
-                <br>Ad tayfasında olan nəhənglər (və ya divlər) yer üzündə səyahət edərkən digərləri qəddarcasına tutaraq öldürürdülər.
-                Hud (عليه السلام) onları təvazökər və mülayim olmağa çağırırdı.
-                <i>Birini yaxaladığınız zaman <span class="green">qəddarcasına</span> yaxalayırsınız (<a href="https://quran.az/26/130?t=1" target="_blank">26:130</a>).</i>
-                <div class="ayah">وَإِذَا بَطَشْتُمْ بَطَشْتُمْ<span class="green"> جَبَّارِينَ</span></div>
-            </div>
 
-            <div class="paragraph">
-                <b>Qırılmış bir şeyi təmir etmək, düzəltmək, birləşdirmək (məsələn, qırılmış sümüyü yenidən birləşdirmək)</b> - Allah istənilən qırılmış bir şeyi düzəltməyə qadirdir. Allah öz dinini bir edir, gücləndirir, din zəiflədikdə isə onu yenidən bərpa edir.
-            </div>
-
-            <div class="paragraph">
-                İnsana aid edildikdə Allahın qoyduğu sərhədləri aşan, özünü həqiqətdən üstün görən, haqsız olduğu zaman inadkarlıq göstərən, hakimiyyətindən sui istifadə edən qəddar və zülmkar kəslər nəzərdə tutulur.
-                Bu, əsasən, var-dövləti və hakimiyyəti çox olan insanlarda rast gəlinsə də, hər birimizdə gündəlik həyatımızda, evdə, işdə və s. yüngül səviyyədə baş verə bilər.
-                Bundan qurtulmaq üçün Allahın həqiqətinə boyun əyməli, haqsız olduğumuz zaman etiraf etməli və həqiqəti hər zaman qəbul etməyə hazır olmalıyıq.
-                Haqsız olduğumuz zaman etiraf etmək, həqiqətə boyun əymək nə qədər çətin olsa da, bir o qədər Allah qatında dəyərlidir.
-            </div>
-
-            <div class="paragraph">
-                <b>Məcbur etmək, tabe etmək və idarə etmək</b> - Bu lüğəvi mənaya da növbəti ayədə rast gəlinir. <br>
-                <i>Biz onların nə dediklərini çox yaxşı bilirik. Sən onları (iman gətirmələri üçün) <span class="green">məcbur edən</span> deyilsən.
-                    Ona görə də sən Mənim əzabımdan qorxan kimsələrə Quranla öyüd ver! (<a href="https://quran.az/50/45?t=1" target="_blank">50:45</a>).</i>
-                <div class="ayah">نَحْنُ أَعْلَمُ بِمَا يَقُولُونَ ۖ وَمَا أَنْتَ عَلَيْهِمْ <span class="green">بِجَبَّارٍ ۖ</span> فَذَكِّرْ بِالْقُرْآنِ مَنْ يَخَافُ وَعِيدِ</div>
-            </div>
-
-            <div class="paragraph">
-                <b>Çox böyük ölçüyə malik</b> - 
-                <i>Onlar isə demişdilər: “Ey Musa! Həqiqətən, orada <span class="green">zorba</span> adamlar var. Onlar oradan çıxmayınca biz ora daxil olmayacağıq. 
-                    Əgər onlar oradan çıxsalar, biz daxil olarıq”. (<a href="https://quran.az/5/22?t=1" target="_blank">5:22</a>).</i>
-                <div class="ayah">قَالُوا يَا مُوسَىٰ إِنَّ فِيهَا قَوْمًا <span class="green">جَبَّارِينَ</span> وَإِنَّا لَنْ نَدْخُلَهَا حَتَّىٰ يَخْرُجُوا مِنْهَا فَإِنْ يَخْرُجُوا مِنْهَا فَإِنَّا دَاخِلُونَ</div>
-            </div>
-
-            <div class="paragraph">
-                <b>Təkəbbürlü, Allaha ibadət etməyi özünə sığışdırmayan</b> - 
-                <i>Məni anama qarşı qayğıkeş etdi, <span class="green">təkəbbürlü</span> bir üsyankar etmədi! (<a href="https://quran.az/19/32?t=1" target="_blank">19:32</a>).</i>
-                <div class="ayah">وَبَرًّا بِوَالِدَتِي وَلَمْ يَجْعَلْنِي <span class="green">جَبَّارًا</span> شَقِيًّا</div>
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <div class="name" id="hashr">
-            <h2><a href="?only=hashr"><div>الحشر</div><div>Həşr surəsindən ayələr</div></a></h2>
-            <hr>
-            <div class="paragraph">
-                <i>O, Özündən başqa heç bir məbud olmayan, qeybi və aşkarı Bilən Allahdır. O Mərhəmətlidir, Rəhmlidir (<a href="https://quran.az/59/22?t=1" target="_blank">59:22</a>).</i>
-                <div class="ayah">هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ ۖ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ ۖ هُوَ الرَّحْمَٰنُ الرَّحِيمُ</div>
-            </div>
-            <div class="paragraph">
-                <i>O, Özündən başqa heç bir məbud olmayan, Hökmran, Müqəddəs, Pak, (haqqı )təsdiq edən, (hər şeyi) müşahidə edən, Qüdrətli, Qadir, Məğrur Allahdır.
-                Allah onların Ona şərik qoşduqlarından ucadır (<a href="https://quran.az/59/23?t=1" target="_blank">59:23</a>).</i>
-                <div class="ayah">هُوَ اللَّهُ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْمَلِكُ الْقُدُّوسُ السَّلَامُ الْمُؤْمِنُ الْمُهَيْمِنُ الْعَزِيزُ الْجَبَّارُ الْمُتَكَبِّرُ ۚ سُبْحَانَ اللَّهِ عَمَّا يُشْرِكُونَ</div>
-            </div>
-            <div class="paragraph">
-                <i>O, Xaliq, yoxdan Yaradan, Surətverən Allahdır. Ən gözəl adlar yalnız Ona məxsusdur.
-                    Göylərdə və yerdə olanların hamısı Onun şəninə təriflər deyir. O, Qüdrətlidir, Müdrikdir. (<a href="https://quran.az/59/24?t=1" target="_blank">59:24</a>).</i>
-                <div class="ayah">هُوَ اللَّهُ الْخَالِقُ الْبَارِئُ الْمُصَوِّرُ ۖ لَهُ الْأَسْمَاءُ الْحُسْنَىٰ ۚ يُسَبِّحُ لَهُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ ۖ وَهُوَ الْعَزِيزُ الْحَكِيمُ</div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        var qs = (function(a) {
-            if (a == "") return {};
-            var b = {};
-            for (var i = 0; i < a.length; ++i){
-                var p=a[i].split('=', 2);
-                if (p.length == 1)b[p[0]] = "";
-                else b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
-            }
-            return b;
-        })(window.location.search.substr(1).split('&'));
-        document.body.classList.add('bg'+(qs['bg'] || Math.floor((Math.random() * 3) + 0)));
-
-        var only = qs['only'] || window.location.hash || false
-        if (only) {
-            only = only.replace('#', '')
-            document.querySelectorAll('.asmaul_husna .name').forEach(element => {
-                if (element.id != only) element.remove()
-                if (element.id == only) document.title += ', '  + element.querySelectorAll('h2 a div')[1].innerText + ', '  + element.querySelectorAll('h2 a div')[0].innerText;
-            });
+        trim1, trim2 {
+            display: inline-block;  
+            max-width: 150px;       
+            white-space: nowrap;     
+            overflow: hidden;        
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            font-style: italic;
+            direction: ltr;
+            font-size: 12px;
+        }
+        trim2 {
+            direction: rtl;
         }
 
-        document.querySelector('.asmaul_husna').style.display = 'block'
+        arabic, arabic2 {
+            font-size: 26px;
+            font-family: uthmani, Traditional Arabic;
+            text-align: right;
+            direction: rtl;
+            letter-spacing: 0;
 
-        var msnry = new Masonry( '.asmaul_husna', {
-            itemSelector: '.name',
-            fitWidth: true
-        });
-    </script>
+            i {
+                padding-left: 5px;
+                font-size: 18px;
+                font-style: normal;
+            }
+            i::before {
+                content: "(";
+            }
+            i::after {
+                content: ")";
+            }
+        }
+        arabic2 {
+            display: block;
+
+            trim1, trim2 {
+                font-style: normal;
+                font-size: 20px;
+            }
+
+            trim1 {
+                direction: rtl;
+            }
+            trim2 {
+                direction: ltr;
+            }
+        }
+
+        sl-card [slot="header"] {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+    </style>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@latest/cdn/shoelace-autoloader.js"></script>
+    <title>Allahın gözəl adları və isimləri - Əsməul Husnə - (أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ)</title>
+</head>
+<body>
+    <h1>Allahın gözəl adları - Əsməul Husnə - <arabic>أَسْمَاءُ ٱللَّٰهِ ٱلْحُسْنَىٰ</arabic></h1>
+    <section>
+        <sl-card>
+            <div slot="header">
+                <arabic><i>Əvvəl</i>ٱلْأوَّلُ</arabic>
+                <arabic><i>Axır</i>ٱلْآخِرُ</arabic>
+                <arabic><i>Zahir</i>ٱلظَّٰهِرُ</arabic>
+                <arabic><i>Batin</i>ٱلْبَاطِنُ</arabic>
+            </div>
+            
+            
+            <arabic>هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ ۖ وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ</arabic>
+             -  Əvvəl də, Axır da, Zahir də, Batin də Odur. O, hər şeyi bilir. <a target="_blank" href="https://quran.com/57:3">Hədid, 57:3</a>
+
+
+            <sl-divider></sl-divider>
+            <arabic>ٱلْأوَّلُ</arabic> və <arabic>ٱلْآخِرُ</arabic> adları vaxtla əlaqəlidir. Allahdən əvvəl və sonra heç nə yoxdur.
+            <br>
+            <arabic>ٱلظَّٰهِرُ</arabic> (ərşində) hər şeyin üzərindədir (<arabic>ٱلْعَلِيُّ</arabic>). Allah hər yerdə DEYİL!
+            <br>
+            <arabic>ٱلْبَاطِنُ</arabic> hər şeyin üzərində olmasına rəğmən, ən yaxındır, hər şeyi görür, eşidir və bilir və onun elmi hər şeyi əhatə edir.
+            <br>
+            <arabic>وَلَقَدْ خَلَقْنَا الْإِنْسَانَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِ نَفْسُهُ ۖ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ الْوَرِيدِ</arabic> - İnsanı Biz yaratdıq və nəfsinin ona nəyi vəsvəsə etdiyini də bilirik. Biz ona şah damarından da yaxınıq.
+            <a target="_blank" href="https://quran.com/50:16">Qaf, 50:16</a>
+
+
+            <sl-divider></sl-divider>
+            <arabic2>
+                <trim1>
+                حَدَّثَنَا عَبْدُ اللَّهِ بْنُ عَبْدِ الرَّحْمَنِ، أَخْبَرَنَا عَمْرُو بْنُ عَوْنٍ، أَخْبَرَنَا خَالِدُ بْنُ عَبْدِ 
+                اللَّهِ، عَنْ سُهَيْلٍ، عَنْ أَبِيهِ، عَنْ أَبِي هُرَيْرَةَ، رضى الله عنه قَالَ كَانَ رَسُولُ اللَّهِ صلى الله عليه وسلم يَأْمُرُنَا إِذَا أَخَذَ أَحَدُنَا مَضْجَعَهُ أَنْ يَقُولَ ‏ "‏ اللَّهُمَّ رَبَّ السَّمَوَاتِ وَرَبَّ الأَرَضِينَ وَرَبَّنَا وَرَبَّ كُلِّ شَيْءٍ وَفَالِقَ الْحَبِّ وَالنَّوَى وَمُنْزِلَ التَّوْرَاةِ وَالإِنْجِيلِ وَالْقُرْآنِ أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ ذِي شَرٍّ أَنْتَ آخِذٌ بِنَاصِيَتِهِ 
+                </trim1>
+                
+                أَنْتَ الأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ وَأَنْتَ الآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ وَالظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ وَالْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ اقْضِ عَنِّي الدَّيْنَ وَأَغْنِنِي مِنَ الْفَقْرِ
+                
+                <trim2>
+                 ‏"‏ ‏.‏ قَالَ أَبُو عِيسَى هَذَا حَدِيثٌ حَسَنٌ صَحِيحٌ ‏.‏
+                </trim2>
+            </arabic2>
+                
+            <trim1>
+            Abu Hurairah (ra) said: “The Messenger of Allah (ﷺ) used to order that when one of us went to sleep, he should say: ‘O Allah, Lord of the heavens and Lord of the earths, and our Lord, and the Lord of everything, splitter of the seed-grain and date-stone, and Revealer of the Tawrah and the Injil and the Qur’an. I seek refuge in You from the evil of every evil that You are holding by the forelock. 
+            </trim1>
+            You are the First, there is nothing before You, You are the Last, there is nothing after You, and Az-Zahir, there is nothing above you, and Al-Batin, there is nothing below You. Relieve me of my debt, and enrich me from poverty 
+            <trim2>
+            (Allāhumma rabbas-samāwati wa rabbal-arḍīna wa rabbanā, wa rabba kulli shai’in, fāliqal-ḥabbi wan-nawā, wa munzilat-Tawrāti wal-Injīli wal-Qur’ān. A`ūdhu bika sharri kulli dhi sharrin anta ākhidhun bināṣiyatihi, antal-Awwalu falaisa qablaka shai’un, wa antal-Ākhiru falaisa ba`daka shai’un, waẓ-Ẓāhiru falaisa fauqaka shai'un wal-Bātinu falaisa dūnaka shai’un, iqḍi `annid-daina wa aghninī minal-faqr).’”
+            </trim2>
+            <a href=”https://sunnah.com/tirmidhi:3400” target=”blank”>Jami` at-Tirmidhi 3400</a>
+
+             
+
+            <sl-divider></sl-divider>
+            <arabic2>
+                <trim1>
+                حَدَّثَنَا عُمَرُ بْنُ حَفْصِ بْنِ غِيَاثٍ، حَدَّثَنَا أَبِي، حَدَّثَنَا الأَعْمَشُ، حَدَّثَنَا جَامِعُ بْنُ شَدَّادٍ، عَنْ صَفْوَانَ بْنِ مُحْرِزٍ، أَنَّهُ حَدَّثَهُ عَنْ عِمْرَانَ بْنِ حُصَيْنٍ ـ رضى الله عنهما ـ قَالَ دَخَلْتُ عَلَى النَّبِيِّ صلى الله عليه وسلم وَعَقَلْتُ نَاقَتِي بِالْبَابِ، فَأَتَاهُ نَاسٌ مِنْ بَنِي تَمِيمٍ فَقَالَ ‏"‏ اقْبَلُوا الْبُشْرَى يَا بَنِي تَمِيمٍ ‏"‏‏.‏ قَالُوا قَدْ بَشَّرْتَنَا فَأَعْطِنَا‏.‏ مَرَّتَيْنِ، ثُمَّ دَخَلَ عَلَيْهِ نَاسٌ مِنْ أَهْلِ الْيَمَنِ فَقَالَ ‏"‏ اقْبَلُوا الْبُشْرَى يَا أَهْلَ الْيَمَنِ، إِذْ لَمْ يَقْبَلْهَا بَنُو تَمِيمٍ ‏"‏‏.‏ قَالُوا قَدْ قَبِلْنَا يَا رَسُولَ اللَّهِ، قَالُوا جِئْنَاكَ نَسْأَلُكَ عَنْ هَذَا الأَمْرِ قَالَ 
+                </trim1>
+                ‏"‏ كَانَ اللَّهُ وَلَمْ يَكُنْ شَىْءٌ غَيْرُهُ، وَكَانَ عَرْشُهُ عَلَى الْمَاءِ، وَكَتَبَ فِي الذِّكْرِ كُلَّ شَىْءٍ، وَخَلَقَ السَّمَوَاتِ وَالأَرْضَ ‏"‏‏.‏ 
+                
+                <trim2>
+                     فَنَادَى مُنَادٍ ذَهَبَتْ نَاقَتُكَ يَا ابْنَ الْحُصَيْنِ‏.‏ فَانْطَلَقْتُ فَإِذَا هِيَ يَقْطَعُ دُونَهَا السَّرَابُ، فَوَاللَّهِ لَوَدِدْتُ أَنِّي كُنْتُ تَرَكْتُهَا‏.‏ 
+                </trim2>
+            </arabic2>
+
+            <trim1>
+            Narrated Imran bin Husain: I went to the Prophet (ﷺ) and tied my she-camel at the gate. The people of Bani Tamim came to the Prophet (ﷺ) who said "O Bani Tamim! Accept the good tidings." They said twice, 'You have given us the good tidings, now give us something" Then some Yemenites came to him and he said, "Accept the good tidings, O people of Yemem, for Bani Tamim refused them." They said, "We accept it, O Allah's Messenger (ﷺ)! We have come to ask you about this matter (i.e. the start of creations)." He said, 
+            </trim1>
+            "First of all, there was nothing but Allah, and (then He created His Throne). His throne was over the water, and He wrote everything in the Book (in the Heaven) and created the Heavens and the Earth." 
+
+            <trim2>
+            Then a man shouted, "O Ibn Husain! Your she-camel has gone away!" So, I went away and could not see the she-camel because of the mirage. By Allah, I wished I had left that she-camel (but not that gathering).
+            </trim2>
+
+            <a href="https://sunnah.com/bukhari:3191">Sahih al-Bukhari 3191</a>
+
+
+
+        </sl-card>
+
+        <sl-card>
+            <div slot="header">Resources</div>
+            <ul>
+                <li><a target="_blank" href="https://99namesofallah.name">https://99namesofallah.name</a></li>
+                <li><a target="_blank" href="https://youtube.com/playlist?list=PLmeZZmICk2Qd4v-SHfZpD7JcWt5ojpleE&si=QZAufaN4oUh1QWW9">https://youtube.com/playlist?list=PLmeZZmICk2Qd4v-SHfZpD7JcWt5ojpleE&si=QZAufaN4oUh1QWW9</a></li>
+            </ul>
+        </sl-card>
+    </section>
 </body>
 </html>
